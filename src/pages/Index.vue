@@ -3,6 +3,7 @@
     <welcome />
     <route-map />
     <locations />
+    <q-img src="../assets/side_monster_blue.jpg"/>
   </q-page>
 </template>
 
