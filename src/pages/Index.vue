@@ -7,10 +7,6 @@
         :todos="todos"
         :meta="meta"
       ></example-component>-->
-    <q-img
-      src="../../src/assets/yaar4.jpg"
-    >
-    </q-img>
   </q-page>
 </template>
 
