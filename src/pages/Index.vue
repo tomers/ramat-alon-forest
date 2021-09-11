@@ -1,14 +1,21 @@
 <template>
   <q-page class="row items-center justify-between">
+    <welcome />
+    <route-map />
+    <locations />
   </q-page>
 </template>
 
 <script lang="ts">
 import { Todo, Meta } from 'components/models';
+import Locations from 'components/Locations.vue';
+import RouteMap from 'components/RouteMap.vue';
+import Welcome from 'components/Welcome.vue';
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   name: 'PageIndex',
+  components: { Locations, RouteMap, Welcome },
   setup() {
     const todos = ref<Todo[]>([
       {
