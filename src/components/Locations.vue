@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-lg">
+  <div class="q-pa-lg self-start">
     <q-list>
       <q-item-label
         header
@@ -16,7 +16,7 @@
         <q-item-section
           avatar
         >
-          <q-icon name="place" />
+          <q-icon name="place" color="lime-10" />
         </q-item-section>
 
         <q-item-section>
