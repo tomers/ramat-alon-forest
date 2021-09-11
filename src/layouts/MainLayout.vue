@@ -12,10 +12,10 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          יער רמת אלון
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>שכונת רמת אלון, חיפה</div>
       </q-toolbar>
     </q-header>
 
@@ -28,7 +28,7 @@
         <q-item-label
           header
         >
-          Essential Links
+          לינקים
         </q-item-label>
 
         <EssentialLink
@@ -50,23 +50,24 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: 'מסלולים',
+    caption: 'israelhiking',
+    icon: 'map',
+    link: 'https://israelhiking.osm.org.il/map/17.44/32.7702/35.0136'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'ירוק בלב',
+    caption: 'yarokbalev.org',
+    icon: 'favorite',
+    link: 'https://www.yarokbalev.org/%D7%94%D7%A2%D7%9E%D7%95%D7%AA%D7%94/%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA/%D7%A9%D7%9E%D7%99%D7%A8%D7%AA-%D7%98%D7%91%D7%A2/%D7%A4%D7%90%D7%A8%D7%A7-%D7%A8%D7%9E%D7%AA-%D7%90%D7%9C%D7%95%D7%9F/'
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    title: 'דרגו אותנו',
+    caption: 'google.com',
+    icon: 'star',
+    link: 'https://g.co/kgs/rVgPC2'
   },
+  /*
   {
     title: 'Forum',
     caption: 'forum.quasar.dev',
@@ -91,6 +92,7 @@ const linksList = [
     icon: 'favorite',
     link: 'https://awesome.quasar.dev'
   }
+  */
 ];
 
 import { defineComponent, ref } from 'vue'
