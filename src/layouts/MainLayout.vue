@@ -15,7 +15,9 @@
           יער רמת אלון
         </q-toolbar-title>
 
-        <div>שכונת רמת אלון, חיפה</div>
+        <q-btn flat round dense icon="my_location"
+          type="a" href="https://israelhiking.osm.org.il/map"
+        />
       </q-toolbar>
     </q-header>
 
