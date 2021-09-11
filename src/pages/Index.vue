@@ -1,11 +1,16 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component>
+  <q-page class="row items-center justify-between">
+    <!--<h1 class="text-white">Basic</h1>-->
+      <!--<example-component
+        title="Example component"
+        active
+        :todos="todos"
+        :meta="meta"
+      ></example-component>-->
+    <q-img
+      src="../../src/assets/yaar4.jpg"
+    >
+    </q-img>
   </q-page>
 </template>
 
@@ -16,7 +21,7 @@ import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   name: 'PageIndex',
-  components: { ExampleComponent },
+  // components: { ExampleComponent },
   setup() {
     const todos = ref<Todo[]>([
       {
