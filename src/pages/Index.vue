@@ -1,5 +1,5 @@
 <template>
-  <q-page class="row items-center justify-between">
+  <q-page class="column items-center justify-between">
     <welcome />
     <route-map />
     <locations />

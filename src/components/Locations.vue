@@ -16,7 +16,7 @@
         <q-item-section
           avatar
         >
-          <q-icon name="place" color="lime-10" />
+          <q-icon name="place" color="primary" />
         </q-item-section>
 
         <q-item-section>
