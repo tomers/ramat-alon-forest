@@ -1,5 +1,17 @@
 <template>
   <div class="bg-white q-pa-sm">
+    <div class="row justify-center">
+      <q-btn
+        icon="navigation"
+        label="לניווט ביער"
+        color="red-9"
+        size="lg"
+        padding="xs xl"
+        glossy
+        stack
+        @click="onClick"
+      />
+    </div>
     <q-img src="../assets/welcome.jpg" />
     <div class="text-center text-primary">
       <div class="text-h5 text-bold">
@@ -24,10 +36,17 @@
 </template>
 
 <script>
+import { openURL } from 'quasar'
 
 export default {
   setup () {
     return {}
+  },
+
+  methods: {
+    onClick () {
+      openURL('https://israelhiking.osm.org.il/map')
+    }
   }
 }
 </script>
