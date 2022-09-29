@@ -1,11 +1,13 @@
 <template>
   <div class="q-pa-lg self-start">
-    <q-list>
+    <q-list class="bg-light-green-2">
       <q-item-label
         header
       >
         מסלולים
       </q-item-label>
+
+      <q-separator inset/>
 
       <q-item
         v-for="route in routes"
@@ -32,11 +34,17 @@
         </q-item-section>
       </q-item>
 
+      <q-item-section class="bg-white">
+        &nbsp;
+      </q-item-section>
+
       <q-item-label
         header
       >
         נקודות עניין
       </q-item-label>
+
+      <q-separator inset/>
 
       <q-item
         v-for="place in places"
@@ -73,18 +81,18 @@ const routes = [
     color2: 'red',
   },
   {
-    title: 'שביל העץ הקסום',
-    caption: 'מטיילת רמת אלון לפינת היער מעל מגה בעיר',
-    to: '',
-    color1: 'yellow',
-    color2: '#F2F3F4',
-  },
-  {
     title: 'שביל התצפית',
     caption: 'מואדי בן-דור למאגר המים מעל הטכניון, לרגלי הרכבלית',
     to: '',
     color1: 'red',
-    color2: '#F2F3F4',
+    color2: 'white',
+  },
+  {
+    title: 'שביל העץ הקסום',
+    caption: 'מטיילת רמת אלון לפינת היער מעל מגה בעיר',
+    to: '',
+    color1: '#FFE800',
+    color2: 'white',
   },
 ]
 const places = [

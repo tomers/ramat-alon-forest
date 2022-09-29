@@ -1,9 +1,9 @@
 <template>
-  <div class="row">
+  <div class="row items-center">
     <template v-for="n in numPairs" :key="n">
       <div
         class="col"
-        :style="{'background-color': color1, minWidth: sectionWidth}"
+        :style="{'background-color': color1, maxHeight: sectionHeight, minWidth: sectionWidth }"
       >
         &nbsp;
       </div>
@@ -13,7 +13,7 @@
       <div
         v-if="n !== numPairs || showLastColor"
         class="col"
-        :style="{'background-color': color2, minWidth: sectionWidth}"
+        :style="{'background-color': color2, maxHeight: sectionHeight, minWidth: sectionWidth}"
       >
         &nbsp;
       </div>
@@ -40,6 +40,10 @@ export default {
     color2: {
       type: String,
       required: true
+    },
+    sectionHeight: {
+      type: String,
+      default: '7px'
     },
     sectionWidth: {
       type: String,
