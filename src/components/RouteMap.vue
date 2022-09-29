@@ -1,7 +1,7 @@
 <template>
   <q-img class="stretch" src="../assets/yaar.jpeg">
     <div class="absolute-top text-subtitle1 text-center">
-      מסלולי ההליכה
+      מפת השטח
     </div>
   </q-img>
 </template>
