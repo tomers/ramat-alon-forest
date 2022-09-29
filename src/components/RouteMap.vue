@@ -1,5 +1,5 @@
 <template>
-  <q-img class="stretch" src="../assets/yaar4.jpeg">
+  <q-img class="stretch" src="../assets/yaar.jpeg">
     <div class="absolute-top text-subtitle1 text-center">
       מסלולי ההליכה
     </div>
