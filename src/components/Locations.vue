@@ -20,7 +20,12 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>{{ route.title }}</q-item-label>
+          <q-item-label>
+            <div class="row justify-between">
+            {{ route.title }}
+            <PathColor :color1="route.color1" :color2="route.color2"/>
+            </div>
+          </q-item-label>
           <q-item-label caption v-if="route.caption">
             {{ route.caption }}
           </q-item-label>
@@ -57,21 +62,29 @@
 </template>
 
 <script>
+import PathColor from './PathColor.vue'
+
 const routes = [
   {
-    title: 'שביל ואדיות חיפה (ירוק-אדום)',
+    title: 'שביל ואדיות חיפה',
     caption: 'מטיילת רמת אלון דרך ואדי בן-דור לסביוני דניה',
-    to: ''
+    to: '',
+    color1: 'green',
+    color2: 'red',
   },
   {
-    title: 'שביל העץ הקסום (צהוב-לבן)',
+    title: 'שביל העץ הקסום',
     caption: 'מטיילת רמת אלון לפינת היער מעל מגה בעיר',
-    to: ''
+    to: '',
+    color1: 'yellow',
+    color2: '#F2F3F4',
   },
   {
-    title: 'שביל התצפית (אדום-לבן)',
-    caption: 'מהעץ הקסום לבריכת המים מעל הטכניון',
-    to: ''
+    title: 'שביל התצפית',
+    caption: 'מואדי בן-דור למאגר המים מעל הטכניון, לרגלי הרכבלית',
+    to: '',
+    color1: 'red',
+    color2: '#F2F3F4',
   },
 ]
 const places = [
@@ -108,6 +121,9 @@ export default {
       places,
       routes,
     }
-  }
+  },
+  components: {
+    PathColor
+}
 }
 </script>
