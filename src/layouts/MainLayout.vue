@@ -16,7 +16,7 @@
         </q-toolbar-title>
 
         <q-btn flat round dense icon="my_location"
-          type="a" href="https://israelhiking.osm.org.il/map"
+          type="a" :href="Globals.map_url"
         />
       </q-toolbar>
     </q-header>
@@ -49,6 +49,7 @@
 
 <script lang="ts">
 import EssentialLink from 'components/EssentialLink.vue'
+import Globals from 'src/globals'
 
 const linksList = [
   {
@@ -114,7 +115,8 @@ export default defineComponent({
       leftDrawerOpen,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
-      }
+      },
+      Globals
     }
   }
 })

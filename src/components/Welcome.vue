@@ -37,6 +37,7 @@
 
 <script>
 import { openURL } from 'quasar'
+import Globals from 'src/globals'
 
 export default {
   setup () {
@@ -45,7 +46,7 @@ export default {
 
   methods: {
     onClick () {
-      openURL('https://israelhiking.osm.org.il/map')
+      openURL(Globals.map_url)
     }
   }
 }
