@@ -11,9 +11,9 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
+        <q-btn stretch flat size="lg" to="/">
           יער רמת אלון
-        </q-toolbar-title>
+        </q-btn>
 
         <q-btn flat round dense icon="my_location"
           type="a" :href="Globals.map_url"
