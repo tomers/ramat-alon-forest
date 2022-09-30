@@ -15,6 +15,8 @@
           יער רמת אלון
         </q-btn>
 
+        <q-space/>
+
         <q-btn flat round dense icon="my_location"
           type="a" :href="Globals.map_url"
         />
