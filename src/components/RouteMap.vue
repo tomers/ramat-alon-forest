@@ -1,15 +1,19 @@
 <template>
-  <q-img class="stretch" src="../assets/yaar.jpeg">
+  <q-img class="stretch" src="yaar.jpeg" @click="onClick">
     <div class="absolute-top text-subtitle1 text-center">
       מפת השטח
     </div>
   </q-img>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   setup () {
-    return {}
-  }
+    function onClick() {
+      window.location.href = 'yaar.jpeg'
+    }
+
+  return { onClick }
+},
 }
 </script>

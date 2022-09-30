@@ -12,7 +12,7 @@
         @click="onClick"
       />
     </div>
-    <q-img src="../assets/welcome.jpg" />
+    <q-img src="welcome.jpg" />
     <div class="text-center text-primary">
       <div class="text-h5 text-bold">
         <div>
