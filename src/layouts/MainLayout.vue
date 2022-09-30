@@ -53,7 +53,7 @@ import Globals from 'src/globals'
 
 const linksList = [
   {
-    title: 'מסלולים',
+    title: 'ניווט ביער',
     caption: 'israelhiking',
     icon: 'map',
     link: 'https://israelhiking.osm.org.il/map/17.44/32.7702/35.0136'
